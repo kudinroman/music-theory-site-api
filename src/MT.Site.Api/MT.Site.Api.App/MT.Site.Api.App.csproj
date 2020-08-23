@@ -11,7 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Libs\MT.Site.Api.Domain.Interfaces\MT.Site.Api.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\Libs\MT.Site.Api.Domain\MT.Site.Api.Domain.csproj" />
     <ProjectReference Include="..\Libs\MT.Site.Api.WebApi\MT.Site.Api.WebApi.csproj" />
+    <ProjectReference Include="..\MT.Site.Api.Storage.Interfaces\MT.Site.Api.Storage.Interfaces.csproj" />
+    <ProjectReference Include="..\MT.Site.Api.Storage\MT.Site.Api.Storage.csproj" />
   </ItemGroup>
 
 </Project>

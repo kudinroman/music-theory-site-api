@@ -6,4 +6,8 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MT.Site.Api.Domain.Interfaces\MT.Site.Api.Domain.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

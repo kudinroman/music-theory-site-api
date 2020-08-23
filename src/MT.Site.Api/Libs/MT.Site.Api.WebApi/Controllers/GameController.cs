@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MT.Site.Api.WebApi.Contracts.Game;
 using MT.Site.Api.WebApi.ProcessingServices;
+using System.Threading.Tasks;
 
 namespace MT.Site.Api.WebApi.Controllers
 {
@@ -15,14 +16,14 @@ namespace MT.Site.Api.WebApi.Controllers
 
         [HttpPost]
         [Route("api/games")]
-        public IActionResult CreateGame([FromBody] StartGameInContract startGameInContract)
+        public async Task<IActionResult> CreateGame([FromBody] StartGameInContract startGameInContract)
         {
             if (startGameInContract == null)
             {
                 return BadRequest();
             }
 
-            var outContract = _processingService.CreateGame(startGameInContract);
+            var outContract = await _processingService.CreateGame(startGameInContract);
             return Ok(outContract);
         }
     }

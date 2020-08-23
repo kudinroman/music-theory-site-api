@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MT.Site.Api.Storage.Interfaces\MT.Site.Api.Storage.Interfaces.csproj" />
+    <ProjectReference Include="..\MT.Site.Api.Domain.Interfaces\MT.Site.Api.Domain.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
